@@ -57,5 +57,12 @@ gem 'dotenv'
 gem 'nokogiri'
 gem 'google-api-client'
 
+townhalls_scrapper.rb
+Ce fichier récupère les adresses mail des Mairie à partir du site http://www.annuaire-des-mairies.com et les implémentes dans un fichier Json
+
 twitter
+Ce fichier récupère le nom des mairies à partir du fichier JSON et y ajoute le handle twitter de la mairie
 une partie qui explique ce qui a été fait : l'email envoyé, le nombre de mairies touchées, le handle Twitter qui a été utilisé
+
+townhalls_mailer.rb │
+Récupere toutes les mails des mairies à partir du fichier JSON et leur envoie un mail faisant la publicité de THP
