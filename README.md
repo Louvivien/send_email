@@ -1,4 +1,4 @@
-                                                    send_email-Projet Vendredi
+                                                send_email-Projet Vendredi
 
 la partie d'introduction qui présente l'équipe, explique en un paragraphe les grandes lignes du programme, puis comment l'utiliser ($ bundle install)
 
@@ -11,9 +11,12 @@ Cyril AVRONSART
 Florian PINTO
 Vivien RICHAUD
 Priscille de la TOUR
+
+
+
 Le programme Send_email permet
 
-de collecter les noms des villes et les emails des mairies des départements Hautes-Alpes (05), Alpes-de-Haute-Provence (04) et de DEPARTEMENT NO 3, et de les stocker dans un tableur (.csv).
+de collecter les noms des villes et les emails des mairies des départements Hautes-Alpes (05), Alpes-de-Haute-Provence (04) et de lot-et-garonne et de les stocker dans un fichier JSON
 de collecter les handles twitter de ces mairies grâce à un bot twitter et de les stocker dans une troisième colonne du même tableur.
 de suivre les mairies sur twitter
 d'envoyer un email à chaque adresse email de mairie (extraite du tableur) à partir d'un compte Gmail
