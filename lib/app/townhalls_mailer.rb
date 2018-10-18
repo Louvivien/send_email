@@ -26,7 +26,7 @@ class Mailer
 
   # cette methode parcourt le json
   def browse_json
-    file = File.read('./db/townhalls2.json')
+    file = File.read('./db/townhalls.json')
     datas = JSON.parse(file)
 
     # elle fait une boucle dnas le fichier json pour sortir deux eléments, les emails et les communes
