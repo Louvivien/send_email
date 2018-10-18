@@ -52,9 +52,9 @@ Run app.rb
 gem 'highline', '>= 1.5.1', group: :test
 gem 'google_drive'
 gem 'json'
-gem 'rake', '< 11.0'
-gem 'rspec', '~> 3.4'
-gem 'rubocop', '~> 0.57.2'
+gem 'rake', 
+gem 'rspec', 
+gem 'rubocop', 
 gem 'pry'
 gem 'dotenv'
 ge#send_email-Projet Vendredm 'nokogiri'
@@ -67,7 +67,7 @@ twitter
 Ce fichier récupère le nom des mairies à partir du fichier JSON et y ajoute le handle twitter de la mairie
 une partie qui explique ce qui a été fait : l'email envoyé, le nombre de mairies touchées, le handle Twitter qui a été utilisé
 
-townhalls_mailer.rb │
+townhalls_mailer.rb 
 ATTENTION : il faut mettre son ID gmail et son MDP Gmail ligne 13
 Récupere toutes les mails des mairies à partir du fichier JSON et leur envoie un mail faisant la publicité de THP
 
