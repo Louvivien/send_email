@@ -1,8 +1,8 @@
 require 'bundler'
 Bundler.require
 
-$:.unshift File.expand_path("./../lib/app", __FILE__)
+$LOAD_PATH.unshift File.expand_path('lib/app', __dir__)
 require 'townhalls_mailer'
 
-#on appelle notre classe mailer qui va aller envoyer des emails à partir du fichier CSV
-Mailer.new
+# on appelle notre classe mailer qui va aller envoyer des emails à partir du fichier CSV
+Mailer.new.browse_json
