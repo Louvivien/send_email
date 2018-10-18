@@ -1,4 +1,4 @@
-                                                #send_email-Projet Vendredi
+                                                send_email-Projet Vendredi
 
 la partie d'introduction qui présente l'équipe, explique en un paragraphe les grandes lignes du programme, puis comment l'utiliser ($ bundle install)
 
@@ -68,4 +68,8 @@ Ce fichier récupère le nom des mairies à partir du fichier JSON et y ajoute l
 une partie qui explique ce qui a été fait : l'email envoyé, le nombre de mairies touchées, le handle Twitter qui a été utilisé
 
 townhalls_mailer.rb │
+ATTENTION : il faut mettre son ID gmail et son MDP Gmail ligne 13
 Récupere toutes les mails des mairies à partir du fichier JSON et leur envoie un mail faisant la publicité de THP
+
+
+
