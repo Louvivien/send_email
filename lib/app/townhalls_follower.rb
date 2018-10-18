@@ -1,11 +1,14 @@
 require "twitter"
 require "dotenv"
-require 'csv'
+require 'json'
+require 'pry'
 Dotenv.load
 
 class AddToDb
 	def initialize
-
+		@name_town = []
+		@handle = []
+		@search_id = []
 	end
 
 	def instance_twitter
@@ -18,19 +21,34 @@ class AddToDb
  	end
 
 	def find_name_townhall
-		@name_town =
+		file = File.read('./../../db/townhalls.json')
+		datas = JSON.parse(file)
+
+		(0...datas.length).each do |i|
+            @name_town << datas[i]['name']
+    	end
+		
+
+
 	end
 
 	def find_user
-		@handle = []
 
-		@name_town.each do |town|
-			search_id = @twitter_instance.user_search("Mairie #{town}")
-			user_id = search_id[0].screen_name
-			#@twitter_instance.follow user_id
-			@handle.push "@#{user_id}"
+	@name_town.each do |town|
+		@twitter_instance.search("Mairie #{town}").take(1).collect do |tweet|
+		@handle << tweet.user.screen_name
 		end
-		puts @handle
+	end
+	puts @handle
+	#	@name_town.map do |town|
+	#		@search_id = @twitter_instance.user_search("Mairie #{town}")
+	#		user_id = @search_id[0].screen_name
+			#@twitter_instance.follow user_id
+	#		@handle.push "@#{user_id}"
+					
+		#end
+		#puts @handle
+
 	end
 
 
