@@ -1,4 +1,4 @@
--send_email
+                                                       <h1>send_email</h1>
 Projet Vendredi
 la partie d'introduction qui présente l'équipe, explique en un paragraphe les grandes lignes du programme, puis comment l'utiliser ($ bundle install)
 
