@@ -11,7 +11,7 @@ class Mailer
   def send_mails(mail, name)
     adresse = mail
 
-    gmail = Gmail.connect('patti.lala4@gmail.com', 'rubythpgmail')
+    gmail = Gmail.connect('IDGMAIL', 'MDPGMAIL')
     gmail.deliver do
       to adresse
       subject "Le projet THP propose d'apprendre à vos administrés d'apprendre gratuitement à programmer !"
