@@ -1,7 +1,6 @@
 require 'bundler'
 Bundler.require
 
-<<<<<<< HEAD
 $:.unshift File.expand_path("./../lib/app", __FILE__)
 
 require 'townhalls_scrapper.rb'
@@ -25,4 +24,5 @@ ScrappeRegion.new.perform
 # on appelle notre classe Mailer qui va aller envoyer des emails à partir du fichier JSON
 Mailer.new.browse_json
 
->>>>>>> mailer
+
+AddToDb.new.perform
